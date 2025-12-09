@@ -1,3 +1,4 @@
+FROM fedora:latest
 RUN dnf update -y && install -y httpd
 RUN echo "Containers are easy!" > /var/www/html/index.html
 RUN useradd collin
